@@ -1,4 +1,4 @@
-cwlVersion: v1.0
+cwVersion: v1.0
 class: CommandLineTool
 baseCommand: echo
 stdout: output.txt
