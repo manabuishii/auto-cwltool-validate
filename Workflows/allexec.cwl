@@ -1,9 +1,9 @@
+# Workflow exec ../Tools/message.cwl
 class: Workflow
 cwlVersion: v1.0
 
 inputs:
   message: string
-
 
 steps:
   message:
