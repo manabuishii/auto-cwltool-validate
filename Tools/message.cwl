@@ -7,6 +7,10 @@ inputs:
     type: string
     inputBinding:
       position: 1
+  newmessage:
+    type: string
+    inputBinding:
+      position: 2
 outputs:
   output:
     type: stdout
