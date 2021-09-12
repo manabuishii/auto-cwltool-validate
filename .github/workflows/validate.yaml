@@ -33,4 +33,4 @@ jobs:
           pip install cwltool==3.1.20210816212154
 
       - name: Test code
-        run: cwltool --validate message.cwl
+        run: cwltool --validate Workflows/allexec.cwl
