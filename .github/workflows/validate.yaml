@@ -27,8 +27,10 @@ jobs:
           path: ~/.cache/pip
           key: pip-cache-for-cwltool-3.1.20210816212154
 
-      - name: cwltool install
-        run: pip install cwltool==3.1.20210816212154
+      - name: Upgrade pip, setuptools, wheel and install cwltool
+        run: |
+          pip install -U pip setuptools wheel
+          pip install cwltool==3.1.20210816212154
 
       - name: Test code
         run: cwltool --validate message.cwl
