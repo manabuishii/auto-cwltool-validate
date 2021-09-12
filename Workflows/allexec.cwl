@@ -4,12 +4,14 @@ cwlVersion: v1.0
 
 inputs:
   message: string
+  newmessage: string
 
 steps:
   message:
     run: ../Tools/message.cwl
     in:
       message: message
+      newmessage: newmessage
     out: [output]
 
 outputs:
